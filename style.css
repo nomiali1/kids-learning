@@ -1,15 +1,13 @@
-/* General Styles */
 body {
     font-family: 'Comic Sans MS', cursive, sans-serif;
-    background-color: #fffbf0;
+    background-color: #fff8e7;
     margin: 0;
-    padding: 0;
     color: #333;
 }
 
 header {
     background-color: #ffb347;
-    color: #fff;
+    color: white;
     text-align: center;
     padding: 20px;
 }
@@ -23,16 +21,36 @@ main {
     padding: 20px;
 }
 
-section {
-    margin-bottom: 40px;
+h2 {
+    color: #ff6f61;
 }
 
-.audio-card, .reading-card {
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.card {
     background-color: #fff3e6;
-    padding: 15px;
     border-radius: 10px;
     box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
-    margin: 10px 0;
+    padding: 10px;
+    text-align: center;
+    width: 120px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
 }
 
 button {
@@ -40,8 +58,8 @@ button {
     border: none;
     padding: 10px 20px;
     border-radius: 10px;
-    cursor: pointer;
     font-size: 1.2em;
+    cursor: pointer;
 }
 
 button:hover {
@@ -50,7 +68,7 @@ button:hover {
 
 footer {
     background-color: #ffb347;
-    color: #fff;
+    color: white;
     text-align: center;
     padding: 10px;
 }
