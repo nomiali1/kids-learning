@@ -8,37 +8,28 @@
 </head>
 <body>
     <header>
-        <h1>Welcome to Kids Learning</h1>
-        <p>Learn Reading, Listening, and Fun Activities!</p>
+        <h1>Kids Learning Fun</h1>
+        <p>Learn Alphabets, Animals, Numbers & Counting!</p>
     </header>
 
     <main>
-        <!-- Listening Section -->
-        <section id="listening">
-            <h2>Listen & Learn</h2>
-            <div class="audio-card">
-                <p>Alphabet Song</p>
-                <audio controls>
-                    <source src="assets/audio/alphabet.mp3" type="audio/mpeg">
-                    Your browser does not support the audio element.
-                </audio>
-            </div>
+        <!-- Alphabets Section -->
+        <section id="alphabets">
+            <h2>Learn Alphabets A-Z</h2>
+            <div id="alphabet-cards" class="card-container"></div>
         </section>
 
-        <!-- Reading Section -->
-        <section id="reading">
-            <h2>Reading Fun</h2>
-            <div class="reading-card">
-                <h3>Short Story: The Little Rabbit</h3>
-                <p>Once upon a time, there was a little rabbit who loved to play in the forest...</p>
-            </div>
+        <!-- Numbers Section -->
+        <section id="numbers">
+            <h2>Learn Numbers 1-100</h2>
+            <div id="number-cards" class="card-container"></div>
         </section>
 
-        <!-- Learning Games Section -->
-        <section id="learning-games">
-            <h2>Interactive Learning</h2>
-            <button onclick="playAlphabetGame()">Play Alphabet Game</button>
-            <div id="game-output"></div>
+        <!-- Counting Practice -->
+        <section id="counting">
+            <h2>English Counting</h2>
+            <button onclick="startCounting()">Start Counting 1-10</button>
+            <div id="count-output"></div>
         </section>
     </main>
 
@@ -49,3 +40,4 @@
     <script src="script.js"></script>
 </body>
 </html>
+
