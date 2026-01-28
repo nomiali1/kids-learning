@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kids Learning Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Kids Learning</h1>
+        <p>Learn Reading, Listening, and Fun Activities!</p>
+    </header>
+
+    <main>
+        <!-- Listening Section -->
+        <section id="listening">
+            <h2>Listen & Learn</h2>
+            <div class="audio-card">
+                <p>Alphabet Song</p>
+                <audio controls>
+                    <source src="assets/audio/alphabet.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </section>
+
+        <!-- Reading Section -->
+        <section id="reading">
+            <h2>Reading Fun</h2>
+            <div class="reading-card">
+                <h3>Short Story: The Little Rabbit</h3>
+                <p>Once upon a time, there was a little rabbit who loved to play in the forest...</p>
+            </div>
+        </section>
+
+        <!-- Learning Games Section -->
+        <section id="learning-games">
+            <h2>Interactive Learning</h2>
+            <button onclick="playAlphabetGame()">Play Alphabet Game</button>
+            <div id="game-output"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Kids Learning. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
